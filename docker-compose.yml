@@ -1,0 +1,14 @@
+
+version: '2'
+
+services:
+  prometheus:
+    image: cyberdojo/prometheus
+    build:
+      context: .
+    command:
+        - '-config.file=/app/prometheus.yml'
+    container_name: cyber-dojo-prometheus
+    ports:
+        - '9090:9090'
+
