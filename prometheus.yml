@@ -9,6 +9,14 @@ scrape_configs:
     honor_labels: true
     static_configs:
       - targets: ['runner:4557']
+  - job_name: 'differ'
+    honor_labels: true
+    static_configs:
+      - targets: ['differ:4567']
+  - job_name: 'storer'
+    honor_labels: true
+    static_configs:
+      - targets: ['storer:4577']
   - job_name: 'prometheus'
     static_configs:
       - targets: ['prometheus:9090']
