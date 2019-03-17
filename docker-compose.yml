@@ -3,7 +3,7 @@ version: '2'
 
 services:
   prometheus:
-    image: cyberdojo/prometheus
+    image: khacnhat/prometheus-dojo
     build:
       context: .
     command:
